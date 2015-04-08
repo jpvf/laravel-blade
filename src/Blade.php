@@ -170,7 +170,7 @@ class Blade {
 
 		$finder = $this->container['view.finder'];
 
-		$env = new Environment($resolver, $finder, $this->container['events']);
+		$env = new Factory($resolver, $finder, $this->container['events']);
 
 		// We will also set the container instance on this view environment since the
 		// view composers may be classes registered in the container, which allows
